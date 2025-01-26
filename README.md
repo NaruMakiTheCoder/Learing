@@ -1,3 +1,3 @@
 Welcome! 
- Here is my codes which i used to learn and improve my coding skills.
+ Here is my codes which i use to improve my coding skills.
 Thanks.
