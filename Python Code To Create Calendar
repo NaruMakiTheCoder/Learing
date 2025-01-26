@@ -1,0 +1,27 @@
+import calendar
+
+def display_calendar(year, month):
+    # Create a TextCalendar instance
+    cal = calendar.TextCalendar()
+    
+    # Display the calendar for the specified month and year
+    print(cal.formatmonth(year, month))
+
+def main():
+    # Get user input for year and month
+    try:
+        year = int(input("Enter year (e.g., 2023): "))
+        month = int(input("Enter month (1-12): "))
+        
+        if month < 1 or month > 12:
+            print("Invalid month. Please enter a month between 1 and 12.")
+            return
+        
+        # Display the calendar
+        display_calendar(year, month)
+    
+    except ValueError:
+        print("Invalid input.")
+
+if __name__ == "__main__":
+    main()
